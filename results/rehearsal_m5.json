@@ -1,0 +1,35 @@
+{
+ "tag": "m5gelu",
+ "infer_mode": "fp16_resident",
+ "games": 100,
+ "invalid": 0,
+ "crash": 0,
+ "consistency": "5006/5006",
+ "mismatch_examples": [],
+ "crash_examples": [],
+ "turn_ms": {
+  "p50": 0.9,
+  "p95": 69.5,
+  "p99": 86.80300000000007
+ },
+ "maxrss_mb": {
+  "resident": 491.7,
+  "load": 491.7
+ },
+ "first_turn_total_s": 0.809,
+ "debug1": {
+  "turn": 1,
+  "turn_wall_ms": 0.0,
+  "maxrss_kb": 503536,
+  "model_tag": "sl_v2_m5_gelu.fp16.pt|fp16_resident|v2",
+  "py": "3.6.13",
+  "torch": "1.10.2+cpu",
+  "torch_import_s": 0.744,
+  "mahjonggb": "ok",
+  "vec_dim": 107,
+  "load_s": 0.024,
+  "rss_after_load": 503536
+ },
+ "elapsed_s": 503.9,
+ "avg_bot_score": -1.95
+}

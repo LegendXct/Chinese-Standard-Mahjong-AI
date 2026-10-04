@@ -1,0 +1,15 @@
+# 国标麻将 AI —— Python 依赖
+#
+# 核心依赖
+numpy>=1.19,<2.0
+torch>=1.10          # 训练脚本需 torch>=2.0 + CUDA GPU(bf16 / torch.compile);部署/推理 1.10 即可
+PyMahjongGB==1.3.0   # 官方算番器(数据重放、arena 评测、RL 自对弈需要);其 shanten 接口有 bug,已由 src/shanten_py.py 替代
+#
+# 测试 / 绘图(可选)
+pytest
+matplotlib
+#
+# ----------------------------------------------------------------------------
+# 已验证组合:
+# - 训练(GPU):Python 3.12 + torch 2.8.0 (CUDA 12.8) + PyMahjongGB 1.3.0
+# - Botzone 线上部署(CPU,严格):Python 3.6.5 + torch 1.10.2+cpu + numpy 1.19.5 + PyMahjongGB 1.3.0

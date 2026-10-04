@@ -1,0 +1,68 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# ---- 模型权重 / checkpoint(体积大,不进 git)----
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+checkpoint/
+checkpoints/
+dist/
+
+# ---- 数据(体积大 + 版权,不进 git)----
+baseline/SL/data/*.txt
+!baseline/SL/data/README.txt
+!baseline/SL/data/README-en.txt
+/data/
+data_v1/
+data_v1_*/
+*.npz
+*.npy
+*.dat
+*.pkl
+*.h5
+
+# arena 逐局原始记录(大、可复现;仓库只保留 .md 摘要)
+results/**/*_vs_*.json
+results/arena_audit/*.json
+
+# ---- 日志 / 临时产物 ----
+logs/
+*.log
+tmp/
+build/
+*.tmp
+*.zip
+
+# ---- 文档类大文件 / Office ----
+*.ppt
+*.pptx
+*.doc
+*.docx
+~$*
+
+# ---- 密钥 / 本地配置 / 个人文件 ----
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+secrets*
+cookies*.txt
+*session*.json
+.claude/
+CLAUDE.md
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

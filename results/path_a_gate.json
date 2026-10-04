@@ -1,0 +1,17 @@
+{
+ "games": 12000,
+ "val_games": 1200,
+ "n_train": 644818,
+ "n_val": 72429,
+ "epochs": 14,
+ "r2_obs_only": 0.0695,
+ "r2_perfect": 0.0796,
+ "r2_value_heads": {
+  "M5": 0.2044,
+  "rl_s3pot": 0.1153
+ },
+ "obs_ceiling_r2": 0.2044,
+ "increment_r2_controlled(perfect-obs_only)": 0.0101,
+ "increment_r2_conservative(perfect-ceiling)": -0.1248,
+ "verdict": "解释2(真天花板)→ 收口 RL,转架构/特征/数据"
+}
